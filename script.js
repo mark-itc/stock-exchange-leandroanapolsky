@@ -33,7 +33,7 @@ async function getData(url) {
       listedCompany.classList.add("list-element");
 
       listedCompany.innerHTML =
-        '<a target="_blank"  class="company-links" href=/company.html?symbol=' +
+        '<a target="_blank"  class="company-links" href=./company.html?symbol=' +
         companyListSymbol +
         ">" +
         companyListName +
@@ -50,3 +50,7 @@ async function getData(url) {
 }
 
 searchButton.addEventListener("click", searchInApi);
+
+// https://stock-
+// exchange-dot-full-stack-course-
+// services.ew.r.appspot.com/api/v3/company/profile/${symbol}

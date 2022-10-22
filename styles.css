@@ -61,3 +61,54 @@ nav {
   text-decoration: none;
   color: green;
 }
+
+.company-container {
+  margin: auto;
+  padding-top: 10vh;
+  width: 70vw;
+}
+
+.company-container-top {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.company-logo {
+  width: 100px;
+}
+
+.company-name {
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 600;
+  padding-left: 1vw;
+}
+
+.company-symbol {
+  padding-left: 1vw;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: row;
+  font-weight: 800;
+}
+
+.stock-price {
+  padding-left: 10px;
+}
+
+.stock-change {
+  padding-left: 10px;
+}
+
+.company-info {
+  padding-top: 5vh;
+}
+
+.chart-container {
+  margin-top: 50px;
+}

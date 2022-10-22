@@ -7,5 +7,65 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Anapolsky Leandro 3rd Assignment</title>
   </head>
-  <body></body>
+
+  <body>
+    <nav>
+      
+      <input
+        type="text"
+        placeholder="Search"
+        id="userInput"
+        class="search-input"
+      />
+     
+      <button
+        type="button"
+        value="Search"
+        class="search-button"
+        id="searchButton"
+      >
+        Search
+      </button>
+     
+      <img src="./img/loading.gif" alt="" class="loader" id="loader" />
+    
+    </nav>
+
+    <ul class="results-list" id="resultsList"></ul>
+
+    <div class="company-container" id="companyContainer">
+      
+      <div class="company-container-top">
+       
+        <img src="" alt="" class="company-logo" id="companyLogo" />
+        <a href="" class="company-name" id="companyName"></a>
+        <div class="company-symbol" id="companySymbolName"></div>
+   
+      </div>
+   
+      <div class="stock-info"> 
+      <div>Stock price:</div>
+      <div class="stock-price" id="stockPrice"></div>
+      <div class="stock-change" id="stockChange"></div>
+      <img src="./img/loading.gif" alt="" class="loader" id="loader2" />
+    </div>
+    <div class="company-info" id="companyInfo"></div>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+    <script src="./company.js"></script>
+    
+
+    
+
+
+
+  </body>
+
+  
 </html>
