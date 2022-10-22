@@ -27,18 +27,18 @@ async function addCompanyInfo(url) {
     const price = document.getElementById("stockPrice");
     const change = document.getElementById("stockChange");
 
-    companyLogo.src = companyProfile.image;
+    logo.src = companyProfile.image;
     name.innerHTML = companyProfile.companyName;
     name.href = companyProfile.website;
     symbolName.innerHTML = results.symbol;
     info.innerHTML = companyProfile.description;
     price.innerHTML = "$" + companyProfile.price;
 
-    if (companyProfile.changes > 0) {
-      change.innerHTML = "(+" + companyProfile.changes + "%)";
+    if (companyProfile.changesPercentage > 0) {
+      change.innerHTML = "(+" + companyProfile.changesPercentage + "%)";
       change.style.color = "#1d8519";
     } else {
-      change.innerHTML = "(-" + companyProfile.changes + "%)";
+      change.innerHTML = "(-" + companyProfile.changesPercentage + "%)";
       change.style.color = "#851919";
     }
   } catch (error) {

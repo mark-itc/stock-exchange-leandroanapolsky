@@ -24,11 +24,15 @@ async function getData(url) {
   try {
     const response = await fetch(url);
     const results = await response.json();
+
     hideLoader();
 
     for (i = 0; i < 10; i++) {
       let companyListName = results[i].name;
       let companyListSymbol = results[i].symbol;
+      const searchURL =
+        "https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/company/profile/" +
+        companyListSymbol;
       let listedCompany = document.createElement("li");
       listedCompany.classList.add("list-element");
 
@@ -50,7 +54,3 @@ async function getData(url) {
 }
 
 searchButton.addEventListener("click", searchInApi);
-
-// https://stock-
-// exchange-dot-full-stack-course-
-// services.ew.r.appspot.com/api/v3/company/profile/${symbol}
